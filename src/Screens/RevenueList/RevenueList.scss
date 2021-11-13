@@ -1,0 +1,12 @@
+.revenueList__container{
+    .revenueList__info{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .revenueList__disclaimer{
+            font-style: bold;
+            font-weight: 600;
+            color: gray;
+        }
+    }
+}

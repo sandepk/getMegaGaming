@@ -1,0 +1,32 @@
+@mixin display-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputTag__container{
+     @include display-flex();
+     width: 100%;
+     padding:10px 20px;
+     
+     
+    .inputTag__containerText{
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "Helvetica Neue","Segoe UI",helvetica,verdana,sans-serif;
+        line-height: 1.35715;
+        opacity: 0.8;
+        width: 100%;
+    }
+    .inputTag__wrongData{
+        border: 0.5px solid red;
+    }
+    .inputTag__outlinedInput{
+        width: 60%;
+    }
+}
+.inputTag__outlinedInput{
+    &:disabled{
+        cursor: not-allowed !important;
+    }
+}
